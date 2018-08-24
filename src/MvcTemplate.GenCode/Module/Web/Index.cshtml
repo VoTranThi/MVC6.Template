@@ -1,0 +1,46 @@
+﻿@model MvcTemplate.GenCode.ModuleModel
+@@model IQueryable<@Model.View>
+
+<div class="col">
+    <div class="widget-box">
+        <div class="widget-header">
+            <span class="icon fa fa-th"></span>
+            <h5>@@Headers.@Model.Models</h5>
+            <div class="widget-header-buttons">
+                <authorize action="Create">
+                    <a asp-action="Create" class="btn">
+                        <span class="far fa-file"></span><span class="text">@@Actions.Create</span>
+                    </a>
+                </authorize>
+            </div>
+        </div>
+        <div class="widget-content">
+            @@(Html
+                .Grid(Model)
+                .Build(columns =>
+                {
+                    columns.AddActionLink("Details", "fa fa-info");
+                    columns.AddActionLink("Edit", "fa fa-pencil-alt");
+                    columns.AddActionLink("Delete", "fa fa-times");
+
+                    @foreach (var property in Model.Properties)
+                    {
+                        if (typeof(DateTime?).IsAssignableFrom(property.PropertyType))
+                        {
+                    @:columns.AddDateProperty(model => model.@property.Name);
+                        }
+                        else if (property.PropertyType == typeof(Boolean))
+                        {
+                    @:columns.AddBooleanProperty(model => model.@property.Name);
+                        }
+                        else
+                        {
+                    @:columns.AddProperty(model => model.@property.Name);
+                        }
+                    }
+                })
+                .ApplyDefaults()
+            )
+        </div>
+    </div>
+</div>

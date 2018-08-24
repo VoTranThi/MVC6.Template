@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcTemplate.Controllers", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcTemplate.Tests", "test\MvcTemplate.Tests\MvcTemplate.Tests.csproj", "{2F7B7315-BF05-461F-9472-490DC607ABFD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcTemplate.GenCode", "src\MvcTemplate.GenCode\MvcTemplate.GenCode.csproj", "{2CB35C46-90D9-47BC-877C-1465554FF9B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{2F7B7315-BF05-461F-9472-490DC607ABFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F7B7315-BF05-461F-9472-490DC607ABFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F7B7315-BF05-461F-9472-490DC607ABFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB35C46-90D9-47BC-877C-1465554FF9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB35C46-90D9-47BC-877C-1465554FF9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB35C46-90D9-47BC-877C-1465554FF9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB35C46-90D9-47BC-877C-1465554FF9B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,5 +94,9 @@ Global
 		{089A5DF2-6112-4A59-BF9B-3DCD45B9D7A6} = {B0DD474E-025E-4274-9198-133B38685DB3}
 		{4777172D-6044-41FD-9480-EA836D70AD73} = {B0DD474E-025E-4274-9198-133B38685DB3}
 		{2F7B7315-BF05-461F-9472-490DC607ABFD} = {901D77D0-17AC-4ED1-8DB9-A9C376597601}
+		{2CB35C46-90D9-47BC-877C-1465554FF9B0} = {B0DD474E-025E-4274-9198-133B38685DB3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC4FDADA-1CB9-4C7A-A27B-F1FB5EF8673B}
 	EndGlobalSection
 EndGlobal
