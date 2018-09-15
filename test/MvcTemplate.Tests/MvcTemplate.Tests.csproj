@@ -4,10 +4,10 @@
     <Version>1.1.0</Version>
     <OutputType>Exe</OutputType>
     <GenerateFullPaths>true</GenerateFullPaths>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <GenerateProgramFile>false</GenerateProgramFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <TargetFrameworks>net461;netcoreapp2.1</TargetFrameworks>
-    <DebugType Condition="'$(Configuration)'=='Debug'">full</DebugType>
+    <DebugType Condition="'$(Configuration)'=='Debug'">portable</DebugType>
     <DebugSymbols Condition="'$(Configuration)'=='Debug'">true</DebugSymbols>
   </PropertyGroup>
 
@@ -22,13 +22,7 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="Microsoft.DotNet.InternalAbstractions" Version="1.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="test-configuration.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.2" />
   </ItemGroup>
 
   <ItemGroup>

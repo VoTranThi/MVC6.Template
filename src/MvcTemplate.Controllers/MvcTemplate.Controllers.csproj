@@ -3,9 +3,9 @@
   <PropertyGroup>
     <Version>1.1.0</Version>
     <GenerateFullPaths>true</GenerateFullPaths>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
-    <DebugType Condition="'$(Configuration)'=='Debug'">full</DebugType>
+    <DebugType Condition="'$(Configuration)'=='Debug'">portable</DebugType>
     <DebugSymbols Condition="'$(Configuration)'=='Debug'">true</DebugSymbols>
   </PropertyGroup>
 
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.2" />
   </ItemGroup>
 
 </Project>
